@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartPage</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .screen {
+        background-color: #ffffff;
+      }
+      .card {
+        top: 48px;
+        left: 48px;
+        width: 41%;
+        height: 535px;
+        background-color: #f0f0f0;
+        border-radius: 40px;
+        border-width: 3px;
+        border-color: #d52821;
+      }
+      .image {
+        top: 194px;
+        left: 128px;
+        width: 512px;
+        height: 512px;
+        border-radius: 24px;
+        background-image: url("https://assets.api.uizard.io/api/cdn/stream/1f72729a-f47e-4b61-87d1-b4dc139af0b2.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .image-container {
+        position: absolute;
+        top: 180px;
+        left: 880px;
+        width: 96px;
+        height: 96px;
+        border-radius: 24px;
+        background-image: url("https://assets.api.uizard.io/api/cdn/stream/799dfbe0-ee27-40e8-8b89-7d9030d3d91a.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .text {
+        color: #1a1a1a;
+        font-size: 28px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        line-height: 72px;
+        position: absolute;
+        top: 255px;
+        left: 842px;
+      }
+      .line {
+        color: #948888;
+        font-size: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        line-height: 72px;
+        position: absolute;
+        top: 285px;
+        left: 740px;
+      }
+      .button {
+        cursor: pointer;
+        position: absolute;
+        top: 350px;
+        left: 855px;
+        width: 162px;
+        height: 48px;
+        padding: 0px 8px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background-color: #d52821;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="card">
+        <div class="image"></div>
+      </div>
+    </div>
+    <div class="image-container"></div>
+    <div class="text">CyberSecure</div>
+    <div class="line">The one Soloution for all your problems</div>
+    <button class="button" id="startButton">Start</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get a reference to the "Start" button by its ID
+        var startButton = document.getElementById("startButton");
+
+        // Add a click event listener to the button
+        startButton.addEventListener("click", function () {
+          // Redirect to SignUp.html when the button is clicked
+          window.location.href = "SignUp.html";
+        });
+      });
+    </script>
+  </body>
+</html>
